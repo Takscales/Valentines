@@ -57,8 +57,9 @@
       filter: drop-shadow(0 10px 14px rgba(0,0,0,.12));
     }
 
+    /* slightly smaller main heading */
     h1 {
-      font-size: clamp(24px, 2vw, 42px);
+      font-size: clamp(20px, 1.8vw, 36px);
       margin: 10px -2 16px;
     }
 
@@ -75,7 +76,7 @@
       top: 50%;
       transform: translateY(-50%);
       padding: 16px 24px;
-      font-size: 18px;
+      font-size: 16px; /* slightly reduced for overall scale */
       font-weight: 800;
       border-radius: 999px;
       border: none;
@@ -111,13 +112,16 @@
       animation: pop .35s ease;
     }
 
+    /* slightly smaller result heading */
     .result h2 {
-      font-size: clamp(30px, 4.5vw, 46px);
+      font-size: clamp(26px, 3.8vw, 40px);
       margin: 10px 0;
     }
 
+    /* reduced GIF size and max-height to keep it from getting too large */
     .fireworks {
-      width: min(380px, 90vw);
+      width: min(300px, 70vw);
+      max-height: 220px;
       margin: 0 auto;
       display: block;
     }
@@ -300,9 +304,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
